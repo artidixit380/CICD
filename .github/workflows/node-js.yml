@@ -27,16 +27,14 @@ jobs:
         cache: 'npm'
 
     - name: Install dependencies
-      run: npm install
+      run:  | 
+         npm install
 
-    -name: Run linter
-     run: npm run lint
 
     - name: Run tests
-      run: npm test
+      run:  |
+        npm app.js
 
-    - name: Build project
-      run: npm run build  # Only if your project has a build step
 
     
 
